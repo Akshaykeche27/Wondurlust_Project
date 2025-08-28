@@ -1,0 +1,9 @@
+<% layout("/layouts/boiler.ejs") %>
+
+<div  class="row">
+    <div class="alert alert-danger col-6 offset-3 mt-5" role="alert">
+        
+   <h4 class="alert-heading"><%= err.message %></h4>
+   <p style="overflow:auto;"><%= err.stack %></p>
+    </div>
+</div>

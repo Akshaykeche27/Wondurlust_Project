@@ -1,0 +1,28 @@
+
+<% layout("/layouts/boiler.ejs") %>
+
+<div class="row mt-3">
+     <h3 class="col-6 offset-3"><b> SignUp On Wounderlust</b></h3>
+    <div class="col-6 offset-3">
+        <form action="/signup" method="post" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input name="username" placeholder="Enter username" required class="form-control" id="username">
+                <div class="valid-feedback">Looks Good</div>
+            </div>
+           
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input name="email" placeholder="Enter Email here" required class="form-control" id="email">
+                <!-- <div class="valid-feedback">Looks Good</div> -->
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">password</label>
+                <input type="password" name="password" placeholder="Enter password" required class="form-control" id="password">
+                <div class="valid-feedback">Looks Good</div>
+            </div>
+            <button class="btn btn-success">SignUp</button>
+        </form>
+    </div>
+</div>
