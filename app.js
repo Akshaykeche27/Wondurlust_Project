@@ -122,5 +122,5 @@ res.render("listings/err.ejs",{message ,err,status})
 
 // Start server
 app.listen(8080, () => {
-  console.log("Server is running at http://localhost:8080/listings");
+  console.log("Server is running at http://localhost:8080");
 });
