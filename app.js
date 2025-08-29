@@ -97,7 +97,7 @@ app.use((req, res, next) => {
 
 // -------------------- Routes --------------------
 app.use("/", userRouter);
-app.use("/listings", listingsRouter);
+app.use("/", listingsRouter);
 app.use("/listings/:id/reviews", reviewsRouter);
 
 // -------------------- Error Handler --------------------
