@@ -97,7 +97,7 @@ app.use((req, res, next) => {
 
 // -------------------- Routes --------------------
 app.use("/", userRouter);
-app.use("/", listingsRouter);
+app.use("/listings", listingsRouter);
 app.use("/listings/:id/reviews", reviewsRouter);
 
 // -------------------- Error Handler --------------------
@@ -108,5 +108,5 @@ app.use((err, req, res, next) => {
 
 // -------------------- Server --------------------
 app.listen(8080, () => {
-  console.log("🚀 Server running at http://localhost:8080/listings");
+  console.log(" Server running at http://localhost:8080/listings");
 });
