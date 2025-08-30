@@ -108,5 +108,5 @@ app.use((err, req, res, next) => {
 
 // -------------------- Server --------------------
 app.listen(8080, () => {
-  console.log("🚀 Server running at http://localhost:8080");
+  console.log("🚀 Server running at http://localhost:8080/listings");
 });
