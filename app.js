@@ -37,8 +37,8 @@ async function main() {
   await mongoose.connect(dbUrl);
 }
 main()
-  .then(() => console.log("✅ Connected to DB"))
-  .catch((err) => console.error("❌ DB Connection Error:", err));
+  .then(() => console.log("Connected to DB"))
+  .catch((err) => console.error(" DB Connection Error:", err));
 
 // -------------------- Session Store --------------------
 const store = MongoStore.create({
@@ -50,7 +50,7 @@ const store = MongoStore.create({
 });
 
 store.on("error", (err) => {
-  console.log("❌ Error in Mongo Session Store:", err);
+  console.log("Error in Mongo Session Store:", err);
 });
 
 const sessionOptions = {
